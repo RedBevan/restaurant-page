@@ -26,9 +26,6 @@ function contactLoad() {
   addressLineTwo.textContent = "Glasgow G1 3TD";
   contentDiv.appendChild(addressLineTwo);
 
-  // Test it's working
-  console.log("Contact us today!");
-
   return contentDiv;
 }
 

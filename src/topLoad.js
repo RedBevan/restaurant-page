@@ -7,11 +7,6 @@ function topLoad() {
   // Grab content div
   const content = document.querySelector("#content");
 
-  // // Create element to add children to
-  // const element = document.createElement("div");
-  // element.setAttribute("id", "elementID");
-  // content.appendChild(element);
-
   // Add header div
   const globalHeaderDiv = document.createElement("div");
   content.insertBefore(globalHeaderDiv, content.firstChild);
@@ -51,7 +46,8 @@ function topLoad() {
   contentDiv.setAttribute("id", "contentDiv");
   globalHeaderDiv.appendChild(contentDiv);
 
-  console.log("test");
+  // Load home page on refresh
+  homeLoad();
 
   return content;
 }

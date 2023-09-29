@@ -1,8 +1,32 @@
-/* body {
-  color: white;
-  background-color: black;
-} */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/home/joe/repos/restaurant-page/src/assets/MyFont1.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
-#elementID {
-  background-color: red;
+/* crimson-text-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/home/joe/repos/restaurant-page/src/assets/MyFont2.woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  color: ivory;
+  background-color: green;
+  font-family: "Crimson Text";
+}
+
+h1 {
+  color: black;
+  font-family: "Josefin Sans";
+}
+
+h2 {
+  font-family: "Josefin Sans";
 }

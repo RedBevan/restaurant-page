@@ -6,6 +6,4 @@ import menuLoad from "./menuLoad";
 import contactLoad from "./contactLoad";
 import topLoad from "./topLoad";
 
-console.log(sayHello());
-
 topLoad();
