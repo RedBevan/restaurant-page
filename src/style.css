@@ -18,15 +18,76 @@
 
 body {
   color: ivory;
-  background-color: green;
-  font-family: "Crimson Text";
+  background-color: black;
+}
+
+#globalHeaderDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-  color: black;
+  color: white;
   font-family: "Josefin Sans";
+}
+
+#buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+
+  height: 25px;
+  width: 5rem;
+  margin: 1rem;
+
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  border-bottom: 2px solid gold;
 }
 
 h2 {
   font-family: "Josefin Sans";
+}
+
+#contentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Crimson Text";
+
+  background-color: ivory;
+  color: black;
+
+  height: 40vh;
+
+  margin-top: 30px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-top: 2px solid gold;
+  border-bottom: 2px solid gold;
+}
+
+#footerDiv {
+  height: 350px;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Crimson Text";
 }

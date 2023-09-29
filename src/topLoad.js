@@ -9,6 +9,7 @@ function topLoad() {
 
   // Add header div
   const globalHeaderDiv = document.createElement("div");
+  globalHeaderDiv.setAttribute("id", "globalHeaderDiv");
   content.insertBefore(globalHeaderDiv, content.firstChild);
 
   // Add page header text
@@ -19,9 +20,10 @@ function topLoad() {
 
   const buttonDiv = document.createElement("div");
   buttonDiv.setAttribute("id", "buttonDiv");
-  globalHeaderDiv.appendChild(buttonDiv);
+  content.appendChild(buttonDiv);
 
   const homeButton = document.createElement("button");
+  homeButton.textContent = "Home";
   homeButton.setAttribute("id", "homeButton");
   buttonDiv.appendChild(homeButton);
   homeButton.addEventListener("click", function () {
@@ -29,6 +31,7 @@ function topLoad() {
   });
 
   const menuButton = document.createElement("button");
+  menuButton.textContent = "Menu";
   menuButton.setAttribute("id", "menuButton");
   buttonDiv.appendChild(menuButton);
   menuButton.addEventListener("click", function () {
@@ -36,6 +39,7 @@ function topLoad() {
   });
 
   const contactButton = document.createElement("button");
+  contactButton.textContent = "Contact";
   contactButton.setAttribute("id", "contactButton");
   buttonDiv.appendChild(contactButton);
   contactButton.addEventListener("click", function () {
@@ -44,7 +48,16 @@ function topLoad() {
 
   const contentDiv = document.createElement("div");
   contentDiv.setAttribute("id", "contentDiv");
-  globalHeaderDiv.appendChild(contentDiv);
+  content.appendChild(contentDiv);
+
+  const footerDiv = document.createElement("div");
+  footerDiv.setAttribute("id", "footerDiv");
+  content.appendChild(footerDiv);
+
+  const footerText = document.createElement("p");
+  footerText.setAttribute("id", "footerText");
+  footerText.textContent = "©RedBevan";
+  footerDiv.appendChild(footerText);
 
   // Load home page on refresh
   homeLoad();
