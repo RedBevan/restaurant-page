@@ -1,44 +1,37 @@
 function menuLoad() {
-  // Remove previously loaded page contents
-  const element = document.querySelector("#elementID");
-  while (element.firstChild) {
-    element.removeChild(element.lastChild);
-  }
+  const contentDiv = document.querySelector("#contentDiv");
 
-  // Reload page header text
-  const headerText = document.createElement("h1");
-  headerText.textContent = "El Gato Negro";
-  element.appendChild(headerText);
+  // Remove all child elements of contentDiv
+  while (contentDiv.firstChild) {
+    contentDiv.removeChild(contentDiv.lastChild);
+  }
 
   // Add menu header
   const menuHeader = document.createElement("h2");
   menuHeader.textContent = "Menu";
-  element.appendChild(menuHeader);
+  contentDiv.appendChild(menuHeader);
 
   const itemOne = document.createElement("p");
   itemOne.textContent = "Purr-mesan Chicken";
-  element.appendChild(itemOne);
+  contentDiv.appendChild(itemOne);
 
   const itemTwo = document.createElement("p");
   itemTwo.textContent = "Meow-ssaka";
-  element.appendChild(itemTwo);
+  contentDiv.appendChild(itemTwo);
 
   const itemThree = document.createElement("p");
   itemThree.textContent = "Paw-sta Carbonara";
-  element.appendChild(itemThree);
+  contentDiv.appendChild(itemThree);
 
   const itemFour = document.createElement("p");
   itemFour.textContent = "Purritos";
-  element.appendChild(itemFour);
+  contentDiv.appendChild(itemFour);
 
   const itemSix = document.createElement("p");
   itemSix.textContent = "Meow-shroom Risotto";
-  element.appendChild(itemSix);
+  contentDiv.appendChild(itemSix);
 
-  // Test it's working
-  console.log("You wanna see the menu?!");
-
-  return element;
+  return contentDiv;
 }
 
 export default menuLoad;
