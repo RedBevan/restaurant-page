@@ -6,20 +6,25 @@ function homeLoad() {
     contentDiv.removeChild(contentDiv.lastChild);
   }
 
+  const textDiv = document.createElement("div");
+  textDiv.setAttribute("id", "textDiv");
+
   const homeHeader = document.createElement("h2");
-  homeHeader.textContent = "The purr-suit of culinary happiness";
+  homeHeader.textContent = "An experience to savour.";
 
   const paraOne = document.createElement("p");
   paraOne.textContent =
-    "Paws for a while at El Gato Negro, and let us whisker up a treat for you and your feline friends.";
+    "El Gato Negro offers an elegant dining experience with natural, sustainable food from local producers. Our versatile approach to flavours has led us to create some truly standout dishes that you will love.";
 
   const paraTwo = document.createElement("p");
   paraTwo.textContent =
-    "Serving all of your cat's favourite dishes and with eminently scratchable furniture.";
+    "Since opening in 2019, our small team has won multiple awards including Best Tastes of Southern England, the UK Food Awards and the BBC Bites Award three times running.";
 
-  contentDiv.appendChild(homeHeader);
-  contentDiv.appendChild(paraOne);
-  contentDiv.appendChild(paraTwo);
+  textDiv.appendChild(homeHeader);
+  textDiv.appendChild(paraOne);
+  textDiv.appendChild(paraTwo);
+
+  contentDiv.appendChild(textDiv);
 
   return contentDiv;
 }
