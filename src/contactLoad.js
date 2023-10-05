@@ -15,7 +15,7 @@ function contactLoad() {
   contentDiv.appendChild(phoneNumber);
 
   const emailAddress = document.createElement("p");
-  emailAddress.textContent = "contact@elgatonegro.biz";
+  emailAddress.textContent = "contact@elgatonegro.co.uk";
   contentDiv.appendChild(emailAddress);
 
   const addressLineOne = document.createElement("p");
@@ -23,7 +23,7 @@ function contactLoad() {
   contentDiv.appendChild(addressLineOne);
 
   const addressLineTwo = document.createElement("p");
-  addressLineTwo.textContent = "Glasgow G1 3TD";
+  addressLineTwo.textContent = "Burling-on-Roy";
   contentDiv.appendChild(addressLineTwo);
 
   return contentDiv;

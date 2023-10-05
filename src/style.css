@@ -92,7 +92,20 @@ h2 {
 }
 
 #contentDiv > .menuItem {
-  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#contentDiv > .menuItem > .menuTitle {
+  color: black;
+  margin: 0;
+}
+
+#contentDiv > .menuItem > .menuDescription {
+  color: darkslategrey;
+  margin: 0;
 }
 
 #footerDiv {
